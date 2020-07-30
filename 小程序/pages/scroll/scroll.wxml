@@ -1,2 +1,7 @@
 <!--pages/scroll/scroll.wxml-->
-<text>pages/scroll/scroll.wxml</text>
+<scroll-view class='bigBox' scroll-x>
+   <view wx:for='{{10}}' class='insideBox' >{{item}}</view>
+</scroll-view>
+<scroll-view class='bigBox1' scroll-y>
+   <view wx:for='{{10}}' class='insideBox1' >{{item}}</view>
+</scroll-view>
