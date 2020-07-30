@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<view>钮枯禄氏-{{name}}</view>
+<view>年方-{{age}}</view><!--数据渲染-->
+<view wx:for='{{object}}'>{{item.name}}-{{item.age}}</view><!--列表展示-->
+<view>{{count}}</view>
+<button bindtap="addClick" size="mini">+</button>
+<button bindtap="subClick" size="mini">-</button>
+
+

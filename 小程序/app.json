@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/scroll/scroll",
+    "pages/image/image",
+    "pages/view/view",
+    "pages/text/text",
+    "pages/about/about",
+    "pages/home/home"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "#00ff00",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/about/about",
+        "text": "首页",
+        "iconPath": "arrests/category.png",
+        "selectedIconPath": "arrests/category1.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "分类",
+        "iconPath": "arrests/home1.png",
+        "selectedIconPath": "arrests/home.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap88.json"
+}

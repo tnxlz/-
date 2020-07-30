@@ -1,0 +1,45 @@
+<!--pages/image/image.wxml-->
+<!-- 
+  重点
+  1.image可以写成双标签，也可以写成单标签
+  2.image有自己的默认大小 320x240
+  3.image组件是行内
+ -->
+
+ <!-- src属性，图片的路径可以是相对路径，也可以是绝对路径，也可以是个网址 -->
+ <image src='../../arrests/timg.jpg'/>
+ <image src='/arrests/timg.jpg'/>
+ <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' show-menu-by-longpress/>
+
+
+ <!-- 图片的懒加载lazy-load -->、
+ 
+   <!-- <image wx:for="{{10}}" src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' bindload="handleImage" lazy-load/> -->
+
+   <!-- 点击上传相册或拍摄图片 -->
+   <button bindtap="picLoad">点击</button>
+   <image src="{{tempFilePaths}}"/>
+
+   <!-- mode -->
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="scaleToFill"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="aspectFit"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="aspectFill"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="widthFix"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="heightFix"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="bottom right"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="top"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="bottom"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="center"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="left"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="right"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="top left"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="top right"/>
+   <image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' mode="bottom left"/>
+
+   
+   
+
+
+ 
+ 
+

@@ -1,0 +1,16 @@
+<!--pages/text/text.wxml-->
+<text>知否知否，\n</text>
+<text>应是绿肥红瘦\n</text><!--text类似于html中的行内标签，默认情况下不换行,要想换行要通过\n来换行-->
+
+<!-- text的属性 -->
+<!-- selectable -->
+<text selectable="{{true}}">hello world\n</text>
+<!-- selectable是长按选中的属性，给其赋值的话得用{{}},如果没写这个属性，默认为false，如果写了这个属性，没赋值，默认为true -->
+
+<!-- space -->
+<text space='nbsp'>hello world\n</text><!--正常空格-->
+<text space='ensp'>hello world\n</text><!--半个中文字符-->
+<text space='emsp'>hello world\n</text><!--一个中文字符-->
+
+<!-- decode 是否解码 -->
+<text decode>5 &gt; 3</text>

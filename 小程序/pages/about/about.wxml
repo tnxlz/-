@@ -1,0 +1,12 @@
+<!--pages/about/about.wxml-->
+const app=getApp()
+<!-- 第二种方式 -->
+<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" size='mini'>点击获取信息</button>
+
+<!-- 第三种方式 -->
+<open-data type='usernickName'></open-data>
+<open-data type='useravatarUrl'></open-data>
+
+
+<view>{{name}}</view>
+<view>{{age}}</view>
