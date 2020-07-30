@@ -1,0 +1,12 @@
+<!--pages/ifel/ifel.wxml-->
+<view wx:if="{{isShow}}">哈哈哈哈</view>
+<view wx:if="{{score>=60}}">及格</view>
+<view wx:if="{{score<60}}">不及格</view>
+
+<!-- ifelse -->
+<button size='mini' bindtap="addClick">点击加6</button>
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=70}}">中等</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else="{{score<60}}">不及格</view>
