@@ -1,0 +1,20 @@
+<!--pages/wxss/wxss.wxml-->
+<!--行内样式-->
+<view style="color:red;">哈哈哈</view>
+<!-- 页面样式 -->
+<view class='item1'>嘿嘿嘿</view>
+<!-- 全局样式 -->
+<view class='contain'>啦啦啦</view>
+
+<!-- 三种设置样式的优先级：行内样式>页面样式>全局样式  同css一样!important -->
+
+<view>---------------------rpx--------------------</view>
+<!-- rpx可以根据屏幕的宽度进行自适应，在iphone6中1px相当于2rpx -->
+<view class='box1'></view>
+<view class='box2'></view>
+
+<!-- 有时样式都在一个文件中不好查看，就将其单独放在wxss文件中,新建一个文件夹style，然后里面创建了wxss文件，最后在wxss.wxss文件中导入
+如果一个样式需要所有页面都要使用到
+官方的样式库 https://github.com/Tencent/weui-wxss -->
+<button class='btn'>点击</button>
+

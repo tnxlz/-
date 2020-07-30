@@ -1,0 +1,4 @@
+@import '/pages/wxss/style/common.wxss';
+.contain{
+  color:green;
+}
