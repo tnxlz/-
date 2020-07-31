@@ -1,0 +1,4 @@
+<view>
+  <view>我是头部</view>
+  <include src='/pages/wxml/nav.wxml'/>
+</view>

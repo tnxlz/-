@@ -1,0 +1,17 @@
+<!--pages/wxml/wxml.wxml-->
+
+<!-- 模板  通过导入使用，但是import不能递归导入，import可以导入template，
+include不可以导入template和<wxs/>,可以导入其他目标文件，相当于拷贝到include的位置-->
+<import src='/pages/wxml/template.wxml'/>
+ 
+ <!-- 可以把上面的模板抽出来放到单独的wxml中 -->
+  <template is='contain' data="{{btnText:'按钮',text:'哈哈哈'}}"></template>
+  <template is='contain' data="{{btnText:'警告',text:'嘿嘿嘿'}}"></template>
+  <template is='contain' data="{{btnText:'点击',text:'嘻嘻嘻'}}"></template>
+
+
+  <block>
+   <include src='/pages/wxml/header.wxml'/>
+   <include src='/pages/wxml/body.wxml'/>
+   <include src='/pages/wxml/footer.wxml'/>
+  </block>
