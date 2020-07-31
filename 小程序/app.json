@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/for/for",
     "pages/ifel/ifel",
     "pages/wxss/wxss",
     "pages/scroll/scroll",

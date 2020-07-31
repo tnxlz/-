@@ -3,6 +3,12 @@
 <view wx:if="{{score>=60}}">及格</view>
 <view wx:if="{{score<60}}">不及格</view>
 
+
+<!-- if和hidden区别，都可以控制组件显示与否，不同的是：if是在不断地重新创建与销毁，hidden是有个display属性，通过这个属性来控制显示与否
+如果一个人组件需要显示隐藏的频率比较高，就需要使用hidden，使用频率少就使用if -->
+<view wx:if="{{isShow}}">if显示</view>
+<view hidden="{{true}}">hidden隐藏</view>
+
 <!-- ifelse -->
 <button size='mini' bindtap="addClick">点击加6</button>
 <view wx:if="{{score>=90}}">优秀</view>

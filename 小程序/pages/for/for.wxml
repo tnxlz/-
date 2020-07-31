@@ -1,0 +1,36 @@
+<!--pages/for/for.wxml-->
+<!-- 遍历数组 -->
+<!-- <view wx:for="{{['abc','def','ghi']}}">{{item}}</view> -->
+<!-- 遍历字符串 -->
+<!-- <view wx:for="codewhy">{{item}}</view> -->
+
+
+<!-- 想要对三个标签进行循环渲染，可以通过view标签进行包裹渲染，但是view组件也会进行渲染，可以采用block，它 并不是一个组件，只是一个
+包裹元素，不会再页面中做任何的渲染，但可以接受属性
+1）将需要进行遍历或者判断的内容进行包裹
+2）将遍历和判断的属性放在block便签中，不影响普通属性的阅读，提高代码的可读性 -->
+<!-- <view>
+<button size='mini'>点击</button>
+<view>哈哈哈</view>
+<view>嘿嘿嘿</view>
+</view> -->
+<!-- <block wx:for="{{3}}">
+<button size='mini'>点击</button>
+<view>哈哈哈</view>
+<view>嘿嘿嘿</view>
+</block> -->
+
+
+<!-- wx:for中item和index重命名 -->
+<!-- <view wx:for="{{movies}}" wx:for-item="film">{{film}}--{{index}}</view>
+<view wx:for="{{movies}}" wx:for-index="i">{{i}}</view> -->
+
+<!-- 遍历二维数组 -->
+<!-- <block wx:for='{{num}}' wx:for-item="outerNum">
+   <block wx:for='{{outerNum}}'>
+     <view>{{item}}</view>
+   </block>
+</block> -->
+
+<!-- key -->
+<view wx:for="{{movies}}" wx:for-item="film" wx:key="index">{{film}}--{{index}}</view>
