@@ -1,0 +1,27 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- wxml页面不能够直接对数据进行处理，也不能直接调用js页面的函数，所以就要在wxs页面对数据进行处理 -->
+<!-- wsx的两种使用方法 -->
+<!-- 方法一 -->
+<!-- <wxs module='info'>
+var name='甄嬛';
+var  age=18;
+function sum(num1,num2){
+  return num1+num2
+}
+module.exports={
+  name:name,
+  age:age,
+  sum:sum
+}
+</wxs> -->
+
+
+<!-- 方法二 wxs单独写一个文件 -->
+<wxs src='../wxs/info.wxs' module='info'/>
+<view>{{info.name}}</view>
+<view>{{info.age}}</view>
+<view>{{info.sum(20,30)}}</view>
+<view>{{info.priceNum(26.66666,3)}}</view>
+
+<!-- 实例，保留指定的小数位 -->
+
