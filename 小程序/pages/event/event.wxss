@@ -1,0 +1,31 @@
+/* pages/event/event.wxss */
+.box{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: cornflowerblue;
+}
+.pic{
+  width: 200rpx;
+  height: 200rpx;
+}
+.cartoon{
+  display: flex;
+}
+.item{
+  flex:1;
+}
+.view1{
+  width: 600rpx;
+  height: 600rpx;
+  background-color: cornflowerblue;
+}
+.view2{
+  width:400rpx;
+  height: 400rpx;
+  background-color: crimson;
+}
+.view3{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: darkblue;
+}

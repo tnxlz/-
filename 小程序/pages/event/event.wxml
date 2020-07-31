@@ -1,0 +1,34 @@
+<!--pages/event/event.wxml-->
+<!-- 事件，常见的事件类型 -->
+<view class='box'
+      bind:touchstart='handletouchstart'
+      bind:touchmove='handletouchmove'
+      bind:touchcancel='handletouchcancel'
+      bind:touchend='handletouchend'
+      bind:tap	='handletap'
+      bind:longpress='handlelongpress'
+ ></view>
+
+ <!-- 事件对象的解析 -->
+ <button bindtap='handleClick'>点击</button>
+
+<image src='../../arrests/touches与changeTouchangesqubie.png' mode="aspectFit"/>
+
+<!-- currentTarget和target的区别，正常情况下都是一样的，只有在有冒泡事件的时候会不一样，当有冒泡的时候，currentTarget指的是触发事件的view，
+target指的是产生事件的view -->
+
+<!-- 事件参数的传递,通过data-进行参数的传递-->
+<view  class='cartoon'>
+    <block wx:for="{{cartoon}}" wx:key="index">
+        <view class='item' bindtap='handle' data-item='{{item}}' data-index='{{index}}'>{{item}}</view>
+    </block>  
+</view>
+
+
+<!-- 时间的捕捉和冒泡 -->
+<view class='view1' capture-bind:tap='handleCaptureView1' bindtap='handleBindView1'>
+    <view class='view2' capture-bind:tap='handleCaptureView2' bindtap='handleBindView2'>
+        <view class='view3' capture-catch:tap='handleCaptureView3' bindtap='handleBindView3'></view>
+    </view>
+</view>
+<!-- capture-catch:tap='handleCaptureView3'可以阻止时间的冒泡 -->
